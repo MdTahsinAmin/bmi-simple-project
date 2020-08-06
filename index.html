@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,10 +9,6 @@
      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
-    
-    <!--Font Awesome-->
-
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <!--Bootstrap-->
     
@@ -19,12 +16,37 @@
 
 </head>
 <body>
-    
+   <div  id ="second-container" class="container d-flex justify-content-center">
+       <div  class="form">
+           <h1> BMI Calculator </h1>
+         
+           <div class="form-all-input">
+               <h6>Height : </h6>
+               <input id = "height" type="text" class="form-control" placeholder="Enter Your Height [meter] ">
+               <br>
+               <h6>Weight</h6>
+               <input id ="weight" type="text" class="form-control" placeholder="Enter Your Weight [kg] ">
+               <br>
+               <h6>Your BMI</h6>
+               <input id = "your-bmi" type="text" class="form-control" placeholder="Your BMI">
 
-
+               <div class="bmi-btn">
+                    <button id ="btn-calculate" class="btn btn-outline-success">Calculate</button>
+               </div>
+               
+               <div class="success-or-fail d-flex justify-content-center">
+                   <a id ="btn-for-success" target="_blank"href="https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html"></a>
+               </div>
+               <br>
+               <p id ='text-for-you'></p>
+           </div>
+        </div>
+  <!--script-->
+  <script src="main.js"></script>
 <!--Bootstrap JS-->
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
 </body>
+
 </html>
